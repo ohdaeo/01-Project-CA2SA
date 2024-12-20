@@ -20,6 +20,7 @@ import UserPage from "./pages/mypage/UserPage";
 import AdminPage from "./pages/ceoadmin/AdminPage";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
+import DockBar from "./pages/DockBar";
 
 function App() {
   const isLogin = false;
@@ -61,6 +62,7 @@ function App() {
           <Route path="/ceoadmin" element={<AdminPage />} />
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
+        <DockBar />
       </Layout>
     </Router>
   );
